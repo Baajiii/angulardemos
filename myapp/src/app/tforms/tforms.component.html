@@ -1,5 +1,5 @@
 <div class="container m-2 border justify-center" style="width: 400px">
-  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <form name="form" (ngSubmit)="onSubmit(f)" #f="ngForm">
     <div class="row">
       <div class="form-group">
         <label for="username">Username</label>
@@ -12,7 +12,10 @@
           required
           #username="ngModel"
         />
-        <span class="small" *ngIf="!username.valid && username.touched"
+        <span
+          id="message1"
+          class="small"
+          *ngIf="!username.valid && username.touched"
           >Please enter a valid username</span
         >
       </div>
@@ -30,7 +33,7 @@
           email
           #email="ngModel"
         />
-        <span class="small" *ngIf="!email.valid && email.touched"
+        <span id="message2" class="small" *ngIf="!email.valid && email.touched"
           >Please enter a valid email</span
         >
       </div>

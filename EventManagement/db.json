@@ -62,6 +62,27 @@
       "password": "123456",
       "mobile": "88888888",
       "id": 3
+    },
+    {
+      "fullname": "snehaa",
+      "email": "snehaa@gmail.com",
+      "password": "123456",
+      "mobile": "878954522342",
+      "id": 4
+    },
+    {
+      "fullname": "HANSA THASLEEM",
+      "email": "hansa@gmail.com",
+      "password": "123456",
+      "mobile": "8680073629",
+      "id": 5
+    },
+    {
+      "fullname": "thoufiq",
+      "email": "thoufiq@gmail.com",
+      "password": "123456",
+      "mobile": "8523456698",
+      "id": 6
     }
   ]
 }

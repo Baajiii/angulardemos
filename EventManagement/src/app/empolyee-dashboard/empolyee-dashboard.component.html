@@ -6,6 +6,7 @@
         <button
           (click)="clickAddEMployee()"
           type="button"
+          id="addemployee"
           class="btn btn-success"
           data-bs-toggle="modal"
           data-bs-target="#staticBackdrop"
@@ -90,7 +91,7 @@
               type="text"
               class="form-control"
               formControlName="firstName"
-              id="exampleInputEmail1"
+              id="firstname"
               aria-describedby="emailHelp"
             />
           </div>
@@ -102,7 +103,7 @@
               type="text"
               class="form-control"
               formControlName="lastName"
-              id="exampleInputPassword1"
+              id="lastname"
             />
           </div>
           <div class="mb-3">
@@ -111,7 +112,7 @@
               type="text"
               class="form-control"
               formControlName="email"
-              id="exampleInputEmail1"
+              id="emailid"
               aria-describedby="emailHelp"
             />
           </div>
@@ -121,7 +122,7 @@
               type="text"
               class="form-control"
               formControlName="mobile"
-              id="exampleInputEmail1"
+              id="number"
               aria-describedby="emailHelp"
             />
           </div>
@@ -130,7 +131,7 @@
             <input
               type="text"
               class="form-control"
-              id="exampleInputEmail1"
+              id="salary"
               formControlName="salary"
               aria-describedby="emailHelp"
             />
@@ -149,6 +150,7 @@
         <button
           *ngIf="showAdd"
           type="button"
+          id="add"
           (click)="postEmployeeDetails()"
           class="btn btn-primary"
         >
@@ -157,6 +159,7 @@
         <button
           *ngIf="showUpdate"
           type="button"
+          id="update"
           (click)="updateEmployeeDetails()"
           class="btn btn-primary"
         >
